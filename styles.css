@@ -52,11 +52,12 @@ body {
     margin: 0;
     color: white;
     z-index: 2;
+    
 }
 
 
 .menu-section {
-    flex-basis: 45%;
+    width: 80%;  /* Ange bredden till önskad procentandel */
     margin-bottom: 2em;
 }
 
