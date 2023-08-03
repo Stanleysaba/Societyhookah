@@ -79,6 +79,14 @@ a {
     box-sizing: border-box;
 }
 
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrera knapparna horisontellt */
+    justify-content: center; /* Centrera knapparna vertikalt */
+    height: 100vh; /* Sätt en höjd på förälderkontainern (t.ex. hela skärmens höjd) */
+}
+
 .menu-button {
     background-color: rgba(0, 0, 0, 0.5); 
     color: white;
@@ -88,7 +96,7 @@ a {
     text-align: center;
     margin-bottom: 20px;
     padding: 30px;
-    width: 300px;
+    width: 300%;
     font-size: 28px;
     transition: background-color 0.3s, transform 0.3s;
 }
@@ -99,13 +107,6 @@ a {
 
 .menu-button:active {
     transform: scale(0.95);
-}
-
-.menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centrera knapparna horisontellt */
-    margin-top: 20px; /* Separation från loggan */
 }
 
 @media only screen and (max-width: 768px) {
