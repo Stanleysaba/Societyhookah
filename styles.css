@@ -1,3 +1,10 @@
+html, body {
+    height: 100vh; /* Sätter höjden till 100% av skärmens synliga höjd */
+    overflow: auto; /* Tillåter skrollning endast om innehållet överstiger 100vh */
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-image: url('Marble.jpg');
     background-repeat: repeat;
