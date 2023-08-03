@@ -1,6 +1,8 @@
 body {
     background-image: url('background.png');
-    background-size: cover;
+    background-repeat: no-repeat; /* Förhindra upprepning av bakgrundsbilden */
+    background-size: contain; /* Begränsa till bildens storlek */
+    background-attachment: fixed; /* Fixera bakgrundsbilden så den inte rullar med sidan */
     display: flex;
     justify-content: center;
     align-items: center;
