@@ -55,11 +55,16 @@ body {
 .menu-section h2 {
     font-size: 24px;
     color: #00c8ff;
+    text-shadow: 1px 1px 2px rgb(0, 234, 255); /* Lägger till en skuggning runt menyrubrikerna */
+    padding: 5px 10px; /* Lägger till lite padding för att öka synligheten */
 }
 
 .menu-section ul li span {
     display: inline-block;
+    text-shadow: 1px 1px 2px rgb(0, 255, 238); /* Lägger till en skuggning runt produkterna i menyn */
+    padding: 5px 10px; /* Lägger till lite padding för att öka synligheten */
 }
+
 
 .menu-section ul li span:first-child {
     width: 250px;
