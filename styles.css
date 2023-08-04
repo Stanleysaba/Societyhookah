@@ -57,9 +57,13 @@ body {
 
 
 .menu-section {
-    width: 80%;  /* Ange bredden till önskad procentandel */
+    box-sizing: border-box;
+    width: 100vw;  /* ändrat från 100% till 100vw */
     margin-bottom: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
 }
+
 
 .menu-section ul {
     font-size: 20px;
