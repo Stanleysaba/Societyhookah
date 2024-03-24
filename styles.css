@@ -38,20 +38,46 @@ body {
 }
 
 .shisha-image {
-    position: absolute;
-    width: auto;
-    height: auto;
-    z-index: 1;
+    position: absolute; /* eller 'fixed' om du vill att bilden ska stanna vid scrollning */
+    bottom: 0; /* Startar från botten av sidan eller närmsta positionerade förälderelement */
+    z-index: -1; /* Ser till att bilden ligger bakom text och annat innehåll */
+    width: auto; /* Behåller den ursprungliga bildbredden */
+    height: auto; /* Du kan justera detta för att kontrollera hur stor del av bilden som ska visas */
+    max-height: 100%; /* Säkerställer att bilden inte sträcker sig längre än skärmens höjd */
+}
+
+.Drinks {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    align-items: center; /* Centrerar bilder horisontellt */
+    z-index: -1; /* Håller bilder bakom annat innehåll */
+    position: absolute; /* Behåll detta om du vill ha bilderna absolut positionerade */
+    width: 100%; /* Säkerställer att .Drinks tar upp full bredd */
+    pointer-events: none; /* Förhindrar interaktion med bilderna så att klick etc. passerar igenom */
+}
+
+.Coffe-image, .JD-image, .Tea-image {
+    width: auto; /* Behåller originalbredden eller anpassa efter behov */
+    max-width: 100%; /* Säkerställer att bilderna inte är bredare än deras container */
+    height: 50vw; /* Bibehåller bildförhållandet */
+    margin-bottom: 300px; /* Ger lite utrymme mellan bilderna */
+    pointer-events: auto; /* Återställer möjligheten att interagera med bilderna om nödvändigt */
+    max-width: 30vw;
+    max-height: 30vw;
 }
 
 .menu-sections {
+    position: flex;
     display: flex;
     flex-direction: column;  /* Lägg till detta */
     align-items: center;     /* Lägg till detta */
     justify-content: center;
     padding: 0;
     margin: 0;
+    height: auto;
     color: white;
+    overflow-y: hidden;
     z-index: 2;
     
 }
@@ -128,6 +154,26 @@ a {
 
 .menu-button:active {
     transform: scale(0.95);
+}
+
+.back-to-index {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 15px;
+    text-align: center;
+    background-color: #00c8ff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.back-to-index:hover {
+    background-color: #0099cc;
+}
+
+.drinks-button {
+    margin-top: 50px; /* eller vilket avstånd du vill ha */
 }
 
 @media only screen and (max-width: 768px) {
