@@ -1,136 +1,184 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Society Hookah - Drinks & Snacks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts för modern typografi -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Länk till CSS-filen -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="Drinks">
-        <img src="JDwhiskey.gif" class="JD-image" alt="JDwhiskey">
-    <img src="Coffedrink.gif" class="Coffe-image" alt="CoffeDrink">
-    <img src="Tea.gif" class="Tea-image" alt="Tea">
-   
-</div>
-    <div class="logo">
-        <a href="index.html">
-            <img src="logo.png" alt="Bildbeskrivning">
-        </a>
-    </div>
-    <div class="menu-sections">
-            
-        <div class="menu-section">
+    <!-- Logotyp -->
+    <header>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="logo.png" alt="Society Hookah Logo">
+            </a>
+        </div>
+    </header>
+
+    <!-- Menysektioner -->
+    <main>
+        <!-- Alcoholic Drinks Section -->
+        <section class="menu-section">
             <h2>Alcoholic Drinks</h2>
-            <ul>
+            <ul class="menu-list">
                 <li><span>Kurze</span><span class="price">3€</span></li>
-                <li><span>Lillet</span><span class="price">7.90€</span></li>
-                <li><span>Aperol</span><span class="price">7.90€</span></li>
-                <li><span>Longdrinks</span><span class="price">7.90€</span></li>
-                <ul>
-                    <li><span>Vodka Energy</span><span class="price">7.90€</span></li>
-                    <li><span>Vodka + Saft</span><span class="price">7.90€</span></li>
-                    <li><span>Vodka + Softgetränk</span><span class="price">7.90€</span></li>
-                    <li><span>Jacky Cola</span><span class="price">7.90€</span></li>
-                    <li><span>Gin + Softgetränk</span><span class="price">7.90€</span></li>
+                <li><span>Lillet</span><span class="price">7,90€</span></li>
+                <li><span>Aperol</span><span class="price">7,90€</span></li>
+                <li><span>Longdrinks</span><span class="price">7,90€</span></li>
+                <ul class="submenu-list">
+                    <li><span>Vodka Energy</span><span class="price">7,90€</span></li>
+                    <li><span>Vodka + Saft</span><span class="price">7,90€</span></li>
+                    <li><span>Vodka + Softgetränk</span><span class="price">7,90€</span></li>
+                    <li><span>Jacky Cola</span><span class="price">7,90€</span></li>
+                    <li><span>Gin + Softgetränk</span><span class="price">7,90€</span></li>
                 </ul>
-            </div>
-            
+            </ul>
+        </section>
 
-            <div class="menu-section">
-                <h2>Cocktails mit Alkohol</h2>
-                <ul>
-                    <li><span>Caipirinha (classic, Maracuja, Mango Wassermelone, Erdbeere)</span><span class="price">8.90€</span></li>
-                    <li><span>Gin-Berry</span><span class="price">8.90€</span></li>
-                    <li><span>Vodka Lime</span><span class="price">8.90€</span></li>
-                    <li><span>Sex on the Beach</span><span class="price">8.90€</span></li>
-                    <li><span>Fruitylicious</span><span class="price">8.90€</span></li>
-                    <li><span>Mojito (classic, Mango)</span><span class="price">8.90€</span></li>
-                    <li><span>Pina Colada (mit Sahne)</span><span class="price">8.90€</span></li>
-                    <li><span>Hawaiian Blue Coconut</span><span class="price">8.90€</span></li>
-                    <li><span>Tequila Sunrise</span><span class="price">8.90€</span></li>
-                    <li><span>Strawberry Daiquiri</span><span class="price">8.90€</span></li>
-                    <li><span>Mango Daiquiri</span><span class="price">8.90€</span></li>
-                    <li><span>Lillet Daiquiri</span><span class="price">8.90€</span></li>
-                    <li><span>Aperol Daiquiri</span><span class="price">8.90€</span></li>
-                </ul>
-            </div>
+        <!-- Bild mellan kategorier -->
+        <div class="category-image">
+            <img src="JDwhiskey.gif" alt="JD Whiskey">
+        </div>
 
-            <div class="menu-section">
-                <h2>Alkoholfreie Cocktails</h2>
-                <ul>
-                    <li><span><b>Cherry Coco Colada</b></span><span class="price">7,90€</span></li>
-                    <li><span>Erdbeer-Limes</span><span class="price">7,90€</span></li>
-                    <li><span>Hakuna Matata</span><span class="price">7,90€</span></li>
-                    <li><span>Virgin Hawaiian Blue Coconut</span><span class="price">7,90€</span></li>
-                    <li><span>Ipanema (Classic, Maracuja, Mango, Wassermelone, Erdbeere)</span><span class="price">7,90€</span></li>
-                    <li><span>Mama Mango</span><span class="price">7,90€</span></li>
-                    <li><span>Virgin Colada</span><span class="price">7,90€</span></li>
-                </ul>
-            </div>
-            
+        <!-- Cocktails mit Alkohol Section -->
+        <section class="menu-section">
+            <h2>Cocktails mit Alkohol</h2>
+            <ul class="menu-list">
+                <li><span>Caipirinha (Classic, Maracuja, Mango, Wassermelone, Erdbeere)</span><span class="price">8,90€</span></li>
+                <li><span>Gin-Berry</span><span class="price">8,90€</span></li>
+                <li><span>Vodka Lime</span><span class="price">8,90€</span></li>
+                <li><span>Sex on the Beach</span><span class="price">8,90€</span></li>
+                <li><span>Fruitylicious</span><span class="price">8,90€</span></li>
+                <li><span>Mojito (Classic, Mango)</span><span class="price">8,90€</span></li>
+                <li><span>Pina Colada (mit Sahne)</span><span class="price">8,90€</span></li>
+                <li><span>Hawaiian Blue Coconut</span><span class="price">8,90€</span></li>
+                <li><span>Tequila Sunrise</span><span class="price">8,90€</span></li>
+                <li><span>Strawberry Daiquiri</span><span class="price">8,90€</span></li>
+                <li><span>Mango Daiquiri</span><span class="price">8,90€</span></li>
+                <li><span>Lillet Daiquiri</span><span class="price">8,90€</span></li>
+                <li><span>Aperol Daiquiri</span><span class="price">8,90€</span></li>
+            </ul>
+        </section>
 
-            <div class="menu-section">
-                <h2>Non-Alcoholic</h2>
-                <ul>
-                    <li><span><b>Limonade</b></span><span class="price">5€</span></li>
+        <!-- Bild mellan kategorier -->
+        <div class="category-image">
+            <img src="Coffedrink.gif" alt="Coffee Drink">
+        </div>
+
+        <!-- Alkoholfreie Cocktails Section -->
+        <section class="menu-section">
+            <h2>Alkoholfreie Cocktails</h2>
+            <ul class="menu-list">
+                <li><span>Cherry Coco Colada</span><span class="price">7,90€</span></li>
+                <li><span>Erdbeer-Limes</span><span class="price">7,90€</span></li>
+                <li><span>Hakuna Matata</span><span class="price">7,90€</span></li>
+                <li><span>Virgin Hawaiian Blue Coconut</span><span class="price">7,90€</span></li>
+                <li><span>Ipanema (Classic, Maracuja, Mango, Wassermelone, Erdbeere)</span><span class="price">7,90€</span></li>
+                <li><span>Mama Mango</span><span class="price">7,90€</span></li>
+                <li><span>Virgin Colada</span><span class="price">7,90€</span></li>
+            </ul>
+        </section>
+
+        <!-- Bild mellan kategorier -->
+        <div class="category-image">
+            <img src="Tea.gif" alt="Tea">
+        </div>
+
+        <!-- Non-Alcoholic Section -->
+        <section class="menu-section">
+            <h2>Non-Alcoholic</h2>
+            <ul class="menu-list">
+                <li><span>Limonade</span><span class="price">5€</span></li>
+                <ul class="submenu-list">
                     <li><span>Berry</span></li>
                     <li><span>Mango/Maracuja</span></li>
-                    <li><span>Lemon/Mint</span></li><br>
-                    <li><span><b>Energy</b></span><span class="price">3.90€</span></li>
+                    <li><span>Lemon/Mint</span></li>
+                </ul>
+                <li><span>Energy Drinks</span><span class="price">3,90€</span></li>
+                <ul class="submenu-list">
                     <li><span>28 Black/Zuckerfrei</span></li>
-                    <li><span>Red Bull/Zuckerfrei/weiß/blau/rot/lila/gelb</span></li>
+                    <li><span>Red Bull (Zuckerfrei/Weiß/Blau/Rot/Lila/Gelb)</span></li>
                 </ul>
-            </div>
-
-            <div class="menu-section">
-                <h2>Alkoholfrei</h2>
-                <ul>
-                    <li><span>Eistee</span><span class="price">3.90€</span></li>
-                    <li><span>Arizona: Pfirsich, Zitrone, Fruit Punch, Wassermelone, Granatapfel, Blaubeere</span></span><span class="price">3,50€</span></li>
-                    <li><span>Säfte (0,2 l - Cranberry, Erdbeere, Banane, Kirsche, Maracuja, Orange, Mango, Apfel, Ananas)</span><span class="price">2,90€</span></li>
-                    <li><span>Säfte (0,4 l - Cranberry, Erdbeere, Banane, Kirsche, Maracuja, Orange, Mango, Apfel, Ananas)</span><span class="price">4,90€</span></li>
-                    <li><span>Alles als 0,4 Schorle möglich!</span></li>
-                    <li><span>Softdrinks (0,33 - Coca Cola, Coca-Cola Zero, Fanta, Sprite, Mezzo Mix)</span><span class="price">3,90€</span></li>
-                    <li><span>Fritz Cola/Zuckerfrei (0,33)</span><span class="price">4,50€</span></li>
-                    <li><span>T.Henry (Tonic Water, Ginger Ale, Bitter Lemon, Russian Wildberry)</span><span class="price">3€</span></li>
-                    <li><span>Moloko</span><span class="price">3,90 €</span></li>
-                    <li><span>Wasser 0,2</span><span class="price">2,50€</span></li>
-                    <li><span>Selter 0,2</span><span class="price">2,50€</span></li>
-                </ul>
-            </div>
-            
-            <div class="menu-section">
-                <h2>Milchshake</h2>
-                <ul>
-                    <li><span><b>Vanille</b></span><span class="price">4,50€</span></li>
-                    <li><span><b>Schokolade</b></span><span class="price">4,50€</span></li>
-                    <li><span><b>Karamell</b></span><span class="price">4,50€</span></li>
-                    <li><span><b>Erdbeere</b></span><span class="price">4,50€</span></li>
-                </ul>
-            </div>
-            
-            
-        
-        <div class="menu-section">
-            <h2>Hot Drinks</h2>
-            <ul>
-                <li><span>Kaffee</span><span class="price">2,50€</span></li>
-                <li><span>Cappuccino</span><span class="price">3,00€</span></li>
-                <li><span>Latte Macchiato</span><span class="price">3,50€ (Sirup Karamell, Vanille zzgl. 0,50€)</span></li>
-                <li><span>Mokka</span><span class="price">2,50€</span></li>
-                <li><span>Tee (Schwarztee, Apfeltee) Becher</span><span class="price">2,50€ (Kanne 4,00€)</span></li>
-                <li><span>Marokkanischer Minztee Becher</span><span class="price">3,50€ (Kanne 5,00€)</span></li>
             </ul>
+        </section>
+
+        <!-- Alkoholfrei Section -->
+        <section class="menu-section">
+            <h2>Alkoholfrei</h2>
+            <ul class="menu-list">
+                <li><span>Eistee</span><span class="price">3,90€</span></li>
+                <li><span>Arizona (Pfirsich, Zitrone, Fruit Punch, Wassermelone, Granatapfel, Blaubeere)</span><span class="price">3,50€</span></li>
+                <li><span>Säfte 0,2l (Cranberry, Erdbeere, Banane, Kirsche, Maracuja, Orange, Mango, Apfel, Ananas)</span><span class="price">2,90€</span></li>
+                <li><span>Säfte 0,4l (Cranberry, Erdbeere, Banane, Kirsche, Maracuja, Orange, Mango, Apfel, Ananas)</span><span class="price">4,90€</span></li>
+                <li><span>Alles als 0,4l Schorle möglich!</span></li>
+                <li><span>Softdrinks 0,33l (Coca Cola, Coca-Cola Zero, Fanta, Sprite, Mezzo Mix)</span><span class="price">3,90€</span></li>
+                <li><span>Fritz Cola/Zuckerfrei 0,33l</span><span class="price">4,50€</span></li>
+                <li><span>T.Henry (Tonic Water, Ginger Ale, Bitter Lemon, Russian Wildberry)</span><span class="price">3€</span></li>
+                <li><span>Moloko</span><span class="price">3,90€</span></li>
+                <li><span>Wasser 0,2l</span><span class="price">2,50€</span></li>
+                <li><span>Selter 0,2l</span><span class="price">2,50€</span></li>
+            </ul>
+        </section>
+
+        <!-- Bild mellan kategorier -->
+        <div class="category-image">
+            <img src="snacks-image.jpg" alt="Snacks">
         </div>
-        <div class="menu-section">
+
+        <!-- Milchshake Section -->
+        <section class="menu-section">
+            <h2>Milchshake</h2>
+            <ul class="menu-list">
+                <li><span>Vanille</span><span class="price">4,50€</span></li>
+                <li><span>Schokolade</span><span class="price">4,50€</span></li>
+                <li><span>Karamell</span><span class="price">4,50€</span></li>
+                <li><span>Erdbeere</span><span class="price">4,50€</span></li>
+            </ul>
+        </section>
+
+        <!-- Hot Drinks Section -->
+        <section class="menu-section">
+            <h2>Hot Drinks</h2>
+            <ul class="menu-list">
+                <li><span>Kaffee</span><span class="price">2,50€</span></li>
+                <li><span>Cappuccino</span><span class="price">3€</span></li>
+                <li><span>Latte Macchiato (Karamell, Vanille +0,50€)</span><span class="price">3,50€</span></li>
+                <li><span>Mokka</span><span class="price">2,50€</span></li>
+                <li><span>Tee (Schwarztee, Apfeltee) Becher/Kanne</span><span class="price">2,50€/4€</span></li>
+                <li><span>Marokkanischer Minztee Becher/Kanne</span><span class="price">3,50€/5€</span></li>
+            </ul>
+        </section>
+
+        <!-- Snacks Section -->
+        <section class="menu-section">
             <h2>Snacks</h2>
-            <ul>
+            <ul class="menu-list">
                 <li><span>Nachos</span><span class="price">5€</span></li>
                 <li><span>Nussmischung (Schale)</span><span class="price">5€</span></li>
             </ul>
-               </div>
-        <a href="index.html" class="back-to-index drinks-button">Hookah</a>
-    </div>
-        </div>
+        </section>
 
-    </div>
+        <!-- Länk tillbaka till Hookah-sidan -->
+        <div class="menu-navigation">
+            <a href="index.html" class="navigation-button">Hookah</a>
+        </div>
+    </main>
+
+    <!-- Footer med Instagram -->
+    <footer>
+        <p>Folge uns auf Instagram:</p>
+        <div class="social-media">
+            <a href="https://www.instagram.com/societyhookahlounge/" class="instagram-link">
+                <img src="instagram-icon.png" alt="@">
+                <span>societyhookahlounge</span>
+            </a>
+        </div>
+        <p>&copy; 2024 Society Hookah. Alle Rechte vorbehalten.</p>
+    </footer>
 </body>
 </html>
