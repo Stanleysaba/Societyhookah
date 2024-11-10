@@ -1,189 +1,186 @@
-body {
-    background-image: url('Marble.jpg');
-    background-repeat: repeat;
-    background-size: contain;
-    background-attachment: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+/* Grundläggande stilar och reset */
+* {
     margin: 0;
-    height: 100%;
-    position: relative;
-    z-index: 0;
-}
-
-.content {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 2;
-}
-
-.logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    z-index: 1;
-}
-
-.logo img {
-    padding: 50px;
-    width: 350px;
-    height: auto;
-    margin-bottom: 30px;
-}
-
-.shisha-image {
-    position: absolute; /* eller 'fixed' om du vill att bilden ska stanna vid scrollning */
-    bottom: 0; /* Startar från botten av sidan eller närmsta positionerade förälderelement */
-    z-index: -1; /* Ser till att bilden ligger bakom text och annat innehåll */
-    width: auto; /* Behåller den ursprungliga bildbredden */
-    height: auto; /* Du kan justera detta för att kontrollera hur stor del av bilden som ska visas */
-    max-height: 100%; /* Säkerställer att bilden inte sträcker sig längre än skärmens höjd */
-}
-
-.Drinks {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-    align-items: center; /* Centrerar bilder horisontellt */
-    z-index: -1; /* Håller bilder bakom annat innehåll */
-    position: absolute; /* Behåll detta om du vill ha bilderna absolut positionerade */
-    width: 100%; /* Säkerställer att .Drinks tar upp full bredd */
-    pointer-events: none; /* Förhindrar interaktion med bilderna så att klick etc. passerar igenom */
-}
-
-.Coffe-image, .JD-image, .Tea-image {
-    width: auto; /* Behåller originalbredden eller anpassa efter behov */
-    max-width: 100%; /* Säkerställer att bilderna inte är bredare än deras container */
-    height: 50vw; /* Bibehåller bildförhållandet */
-    margin-bottom: 300px; /* Ger lite utrymme mellan bilderna */
-    pointer-events: auto; /* Återställer möjligheten att interagera med bilderna om nödvändigt */
-    max-width: 30vw;
-    max-height: 30vw;
-}
-
-.menu-sections {
-    position: flex;
-    display: flex;
-    flex-direction: column;  /* Lägg till detta */
-    align-items: center;     /* Lägg till detta */
-    justify-content: center;
     padding: 0;
-    margin: 0;
-    height: auto;
-    color: white;
-    overflow-y: hidden;
-    z-index: 2;
-    
-}
-
-
-.menu-section {
     box-sizing: border-box;
-    width: 100vw;  /* ändrat från 100% till 100vw */
-    margin-bottom: 2em;
-    padding-left: 2em;
-    padding-right: 2em;
 }
 
-
-.menu-section ul {
-    font-size: 20px;
-    color: #FFFFFF;
-    list-style-type: none;
-    padding: 0;
-}
-
-.menu-section h2 {
-    font-size: 24px;
-    color: #00c8ff;
-    text-shadow: 1px 1px 2px rgb(0, 234, 255);
-    padding: 5px 10px;
-}
-
-.menu-section ul li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.menu-section ul li span {
-    display: inline-flex;
-    text-shadow: 1px 1px 2px rgb(0, 255, 238);
-    padding: 5px 10px;
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background-color: #000;
+    background-image: url('marble.jpg');
+    background-size: auto; /* Justerat för att förhindra inzoomning */
+    background-repeat: repeat;
+    background-position: center center;
+    background-attachment: fixed; /* Fixerar bakgrundsbilden vid scroll */
 }
 
 a {
     text-decoration: none;
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    color: inherit;
 }
 
-.menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+/* Logotyp */
+.logo-container {
+    text-align: center;
+    padding: 20px 0;
 }
 
-.menu-button {
-    background-color: rgba(0, 0, 0, 0.5); 
-    color: white;
-    border: none;
-    cursor: pointer;
-    display: block;
+.logo-container img {
+    width: 200px;
+    height: auto;
+}
+
+/* Menysektioner */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+}
+
+.menu-section {
+    margin-bottom: 40px;
+}
+
+.menu-section h2 {
+    font-size: 32px;
+    color: #00c8ff;
     text-align: center;
     margin-bottom: 20px;
-    padding: 30px;
-    width: 300%;
-    font-size: 28px;
-    transition: background-color 0.3s, transform 0.3s;
+    text-shadow: 1px 1px 2px #000;
 }
 
-.menu-button:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+.menu-list,
+.submenu-list {
+    list-style: none;
 }
 
-.menu-button:active {
-    transform: scale(0.95);
+.menu-list li,
+.submenu-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #444;
+    transition: background-color 0.3s;
 }
 
-.back-to-index {
-    display: block;
-    margin: 20px auto;
-    padding: 10px 15px;
+.menu-list li:hover,
+.submenu-list li:hover {
+    background-color: rgba(0, 200, 255, 0.1);
+}
+
+.menu-list li span,
+.submenu-list li span {
+    font-size: 18px;
+}
+
+.submenu-list {
+    padding-left: 20px;
+}
+
+.price {
+    color: #00c8ff;
+    font-weight: 600;
+}
+
+/* Kategori-bilder */
+.category-image {
     text-align: center;
+    margin: 20px 0;
+}
+
+.category-image img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Navigationsknappar */
+.menu-navigation {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.navigation-button {
+    display: inline-block;
+    padding: 10px 20px;
     background-color: #00c8ff;
     color: #fff;
-    text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s;
 }
 
-.back-to-index:hover {
-    background-color: #0099cc;
+.navigation-button:hover {
+    background-color: #008bb5;
 }
 
-.drinks-button {
-    margin-top: 50px; /* eller vilket avstånd du vill ha */
+/* Footer stilar */
+footer {
+    text-align: center;
+    padding: 20px;
 }
 
-@media only screen and (max-width: 768px) {
-    .menu-button {
-        width: 80%;
-        padding: 15px;
-        font-size: 22px;
+footer p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Instagram Länk */
+.instagram-link {
+    display: inline-flex;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.instagram-link img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+.instagram-link:hover {
+    opacity: 0.9;
+}
+
+.social-media {
+    margin-bottom: 10px;
+}
+
+/* Responsiv design */
+@media (max-width: 768px) {
+    .logo-container img {
+        width: 150px;
     }
 
-    .menu-section ul li span:first-child {
-        width: auto;
+    main {
+        padding: 15px;
+    }
+
+    .menu-list li span,
+    .submenu-list li span {
+        font-size: 16px;
+    }
+
+    .category-image img {
+        width: 80%;
+    }
+
+    .instagram-link {
+        font-size: 14px;
+    }
+
+    .instagram-link img {
+        width: 20px;
+        height: 20px;
     }
 }
