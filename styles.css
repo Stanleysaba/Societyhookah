@@ -9,11 +9,11 @@ body {
     font-family: 'Poppins', sans-serif;
     color: #fff;
     background-color: #000;
-    background-image: url('marble.jpg');
-    background-size: auto; /* Justerat för att förhindra inzoomning */
+    background-image: url('marble.jpg'); /* Kontrollera att filnamnet exakt matchar bilden på GitHub */
+    background-size: auto;
     background-repeat: repeat;
     background-position: center center;
-    background-attachment: fixed; /* Fixerar bakgrundsbilden vid scroll */
+    background-attachment: fixed;
 }
 
 a {
