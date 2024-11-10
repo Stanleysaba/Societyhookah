@@ -9,8 +9,8 @@ body {
     font-family: 'Poppins', sans-serif;
     color: #fff;
     background-color: #000;
-    background-image: url('marble.jpg'); /* Kontrollera att filnamnet exakt matchar bilden på GitHub */
-    background-size: auto;
+    background-image: url('marble.jpg'); /* Kontrollera att filnamnet matchar exakt */
+    background-size: cover;
     background-repeat: repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -19,6 +19,20 @@ body {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+/* Bakgrundsbild för vattenpipan */
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('shishasmokelarge.gif'); /* Kontrollera filnamnet */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
 }
 
 /* Logotyp */
